@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Registro</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<!-- legend sirve para crear un título para un grupo de campos de un   formulario.  -->
+<!-- fieldset sirve para agrupar elementos de un formulario. -->
+  <form class="registro">
+    <fieldset>
+        <legend>Registro</legend>
+        <div class="form-group">
+            <label for="username">Nombre de usuario:</label>
+            <input type="text" id="username" name="username" placeholder="Ingresa tu nombre de usuario" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+        </div>
+        <div class="form-group">
+            <label for="theme">Tema:</label>
+            <select name="theme" id="theme">
+                <option value="0">Elige un tema</option>
+                <option value="1">Dark</option>
+                <option value="2">Light</option>
+                <option value="3">Blue</option>
+                <option value="4">Pink</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+        </div>
+        <div class="form-group">
+            <label for="confirm-password">Confirmación de contraseña:</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirma tu contraseña" required>
+        </div>
+    </fieldset>
+    <button type="submit">Registrarse</button>
+</form>
+</body>
+</html>
